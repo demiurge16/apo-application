@@ -29,7 +29,7 @@ namespace APOApplication
         {
             OpenFileDialog openFileDialog = new OpenFileDialog();
             openFileDialog.InitialDirectory = @"C:\Users\%username%\Images";
-            openFileDialog.Filter = "bitmap files (*.bmp)|*.bmp";
+            openFileDialog.Filter = "bitmap files (*.bmp)|*.bmp|bitmap files (*.jpg)|*.jpg|bitmap files (*.png)|*.png,";
             openFileDialog.Title = "Open file";
 
             if (openFileDialog.ShowDialog() == DialogResult.OK)
